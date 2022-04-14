@@ -31,9 +31,10 @@ header  ul {
     padding: 0 15px;
 }
 section {
-    height: 75vh;
+    height: 100%;
 }
 .image_container {
+
     display: flex;
     justify-content: center;
 
@@ -41,7 +42,7 @@ section {
 .image_container img{
     width: 100%;
     max-width: 271px;
-    padding-top: 109px; 
+    padding-top: 29px; 
 }
 .image_container span {
     color: #4285f4;
