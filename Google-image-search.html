@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Images</title>
+
+    <!-- <script src="https://kit.fontawesome.com/4d8ea21ddb.js" crossorigin="anonymous"></script> -->
+  </head>
+  <body>
+    <div class="anonymous-container">
+      <center>
+        <img src="./Assets/googlelogo_images.png" alt="Google Images" />
+        <label for="images">images</label>
+        <form action="https://www.google.com/search">
+          <div class="search-container">
+            <input type="text" name="q" />
+            <button type="submit">
+                <img src="./Assets/magnifying-glass-solid.svg" alt="search">
+            </button>
+          </div>
+        </form>
+      </center>
+    </div>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            transition: .2s ease-in-out;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        img { z-index: 1;display: block;margin-top: 4em;}
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background-color: #1a1a1a;
+        }
+        .search-container {
+            display: flex;
+            border: 1px solid #303134;
+            width: 50%;
+            border-radius: 24px;
+        }
+
+        button[type="submit"] {
+            background-color: transparent;
+            border: 1px solid;
+            width: 3em;
+            border-radius: 100%;
+            border-style: none;
+            color: aliceblue;
+            cursor: pointer;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            border-radius: 24px;
+            border: 1px solid transparent;
+            height: 2.7em;
+            background-color: transparent;
+            color: aliceblue;
+            padding-left: 2em;
+        }
+
+        img[alt="search"] {
+            margin: 0;
+            width: 1.5em;
+            height: 1.5em;
+            /* border-radius: 100%; */
+        }
+
+        label {
+            z-index: 2;
+            color: #66f;
+            /* margin-top: -1em;
+            margin-left: 13em; */
+            margin: -1em 0 1.5em 13em;
+        }
+
+
+    </style>
+  </body>
+</html>
